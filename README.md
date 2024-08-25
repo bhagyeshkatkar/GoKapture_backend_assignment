@@ -158,7 +158,7 @@ docker run --name GoKapture_db -p 5432:5432 -e POSTGRES_USER=root -e POSTGRES_PA
 - Pagination is set to 5 tasks per page.
 - The page number is passed as a query parameter, e.g., `/?page=2`.
 
-### Task Endpoints
+## Task Endpoints
 
 **Get all tasks of a user:** GET /api/tasks/all
 
