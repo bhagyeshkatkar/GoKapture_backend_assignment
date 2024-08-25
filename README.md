@@ -145,7 +145,7 @@ docker run --name GoKapture_db -p 5432:5432 -e POSTGRES_USER=root -e POSTGRES_PA
        "description": "<description>",
     }
     ```
-# Approach and Assumptions
+# Approach and Assumptions made
 
 ### Roles
 - Roles are defined during registration as either **admin** or **user**.
