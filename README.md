@@ -151,3 +151,16 @@ docker run --name GoKapture_db -p 5432:5432 -e POSTGRES_USER=root -e POSTGRES_PA
 - Only admin can **create and delete task** for users.
 - User can update task as **status or priority**.
 - Pagination is done by **5 tasks on each page** page number to be passed as query ex. **/?page=2**.
+
+### Task Endpoints
+
+**Get all tasks of a user:** GET /api/tasks/all
+
+**Create a new task**: POST /api/tasks/create
+
+**Get All Created Tasks With Pagination**: GET /api/tasks/bulk
+
+**Update a task:** PATCH /api/tasks/update
+
+**Delete a task:** DELETE /api/tasks/delete
+
