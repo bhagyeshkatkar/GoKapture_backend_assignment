@@ -147,10 +147,16 @@ docker run --name GoKapture_db -p 5432:5432 -e POSTGRES_USER=root -e POSTGRES_PA
     ```
 # Approach and Assumptions
 
-- Roles to be defined during registration as admin or user.
-- Only admin can **create and delete task** for users.
-- User can update task as **status or priority**.
-- Pagination is done by **5 tasks on each page** page number to be passed as query ex. **/?page=2**.
+- Roles: Defined during registration as either "admin" or "user".
+
+- Task Management:
+
+Only admin can create and delete tasks for users.
+User can update task status and priority.
+-Pagination:
+
+Pagination is set to 5 tasks per page.
+Page number is passed as a query parameter (e.g., /?page=2).
 
 ### Task Endpoints
 
